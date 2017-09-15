@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//WebRoot/manage.jsp=UTF-8
+encoding//WebRoot/play.jsp=UTF-8
+encoding//src/com/spring/action/UserAction.java=UTF-8
+encoding//src/com/spring/util/JsonDateValueProcessor.java=UTF-8

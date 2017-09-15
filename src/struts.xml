@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="users" extends="struts-default" namespace="/">
+		<!-- 获取随机产生的数字验证码 -->
+		<action name="randomCodeAction" class="com.spring.action.RandomCodeAction">
+			<result type="stream">
+				<param name="contentType">image/jpeg</param>
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		<action name="userAction_*" method="{1}" class="com.spring.action.UserAction">
+        
+			<result name="input">/login.jsp</result>
+			<result name="guest" type="redirectAction">indexAction</result>
+			<result name="manage">/manage.jsp</result>
+			<result name="add">/login.jsp</result>
+		</action>
+		
+		<action name="indexAction" class="com.spring.action.IndexAction">
+	      <result name="success">/test.jsp</result>
+	    </action>
+	    
+	</package>
+	<package name="videoms" extends="struts-default" namespace="/">
+		<action name="videoAction_*" method="{1}" class="com.spring.action.VideoAction">
+			<result name="deliver">/play.jsp</result>
+		</action>
+	</package>
+</struts>    

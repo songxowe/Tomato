@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>酷播迷你V4.0免费网页播放器(列表功能)演示,网页MP4播放器酷播迷你1.重写播放器基础架构</title>
+<meta name="keywords" content="酷播迷你V4.0(免费播放器自动列表功能)演示,免费flv网页视频播放器" />
+<meta name="description" content="网页MP4播放器酷播迷你,支持flv,mp4,mov,f4v,3gp等视频格式；5.新增配置文件功能，此功能将实现与asp,php,jsp,aspx程序更完美的结合" />
+<style type="text/css">
+<!--
+div { line-height:26px; font-size:14px;}
+body { background:#ffffff url(CuPlayerBg.jpg); padding:10px;margin:10px;} 
+div,ul,li,ol,dl,dt,dd,form,img,p{margin: 0; padding: 0; border: 0; }
+li{list-style-type:none;} 
+/* myplayer */
+div#myplayer { width:720px;border:1px #cccccc solid; clear:both;  background:#ffffff; clear:both; height:290px;}
+
+ul.mylist { width:100%; text-align:left;font-size:12px; }
+ul.mylist li { padding:1px 0; line-height:24px;height:24px; border-top:1px #efefef solid; }
+ul.mylist li.on { background:#efefef;}
+ul.mylist li a,ul.mylist li a:link,ul.myllist li a:visited{ padding:0px 6px 0px 30px; overflow:hidden; line-height:24px;height:24px;display:block;  background:url(Images/Vico.jpg) no-repeat 6px 6px; text-decoration:none; color:#666666;}
+ul.mylist li a:hover{ color:#cc0000; background:#efefef url(Images/Vico.jpg) no-repeat 6px 6px; }
+
+div#CuPlayer { width:425px;float:left;margin-left:5px;margin-top:10px;}
+div.list { width:270px;float:left;margin-top:10px;}
+
+div.list dl img{ width:70px;height:50px; float:left;}
+div.list dl strong { display:block; width:190px;float:left; padding-left:8px;}
+div.list dl span { display:block; width:190px;float:left; padding-left:8px;}
+
+div.list dl dt { width:270px;float:left; }
+div.list dl dt a { display:block; line-height:18px;padding-top:10px;  border-bottom:1px #cccccc solid; 
+ height:65px; padding-top:10px; color:#333; font-size:12px; text-decoration:none; }
+div.list dl dt a:hover{  height:65px; padding-top:10px;  text-decoration:none; background:#efefef; }
+-->
+</style>
+<script type="text/javascript" language="javascript" src="images/jquery-1.4.3.min.js"></script>
+</head>
+<body>
+<!--myplayer/begin-->
+<div id="myplayer">
+  <!--酷播迷你 CuPlayerMiniV4.0 代码开始-->
+  <script type="text/javascript" src="Images/swfobject.js"></script>
+  <div id="CuPlayer" > <strong>提示：您的Flash Player版本过低，请<a href="http://www.CuPlayer.com/" >点此进行播放器升级</a>！</strong> </div>
+  <div class="list" style="height:267px;width:280px;overflow-x:hidden;overflow-y:auto" >
+  <dl>
+  <dt><a href="#" onclick="changeStream(0);"><img src="images/p1.jpg" /><strong>11达利园青梅绿茶宣传广告梅绿茶宣告</strong><span>发布日期：2014.03.25</span></a></dt>
+  </dl>
+  <dl>
+  <dt><a href="#" onclick="changeStream(1);"><img src="images/p2.jpg" /><strong>22达利园青梅绿茶宣传广告梅</strong><span>发布日期：2014.03.25</span></a></dt>
+  </dl>
+  <dl>
+  <dt><a href="#" onclick="changeStream(2);"><img src="images/p3.jpg" /><strong>33达利园青梅绿茶宣传广告梅绿茶宣告</strong><span>发布日期：2014.03.25</span></a></dt>
+  </dl>
+  <dl>
+  <dt><a href="#" onclick="changeStream(3);"><img src="images/p4.jpg" /><strong>44达利园青梅绿茶宣传广告梅绿茶</strong><span>发布日期：2014.03.25</span></a></dt>
+  </dl>
+  <dl>
+  <dt><a href="#" onclick="changeStream(4);"><img src="images/p2.jpg" /><strong>55达利园青梅绿茶宣传广告梅</strong><span>发布日期：2014.03.25</span></a></dt>
+  </dl>
+  <dl>
+  <dt><a href="#" onclick="changeStream(5);"><img src="images/p3.jpg" /><strong>66达利园青梅绿茶宣传广告梅绿茶宣告</strong><span>发布日期：2014.03.25</span></a></dt>
+  </dl>
+  <dl>
+  <dt><a href="#" onclick="changeStream(6);"><img src="images/p4.jpg" /><strong>77达利园青梅绿茶宣传广告梅绿茶</strong><span>发布日期：2014.03.25</span></a></dt>
+  </dl>
+  </div>
+  
+</div>
+
+
+</body>
+</html>
+
+

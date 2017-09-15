@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Tue Aug 23 16:54:26 CST 2016
+genBasicCompId=false
+sessionFactoryName=
+profile=
+daoSFId=
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=sequence
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=
+configFile=/Tomato/src/applicationContext.xml
+createConfigFile=true

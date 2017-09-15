@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree id="0">
+	<item text="碉堡的后台管理系统" id="root" im0="dhtmlxtree_icon.gif" im1="dhtmlxgantt_icon.gif"
+		im2="dhtmlxtree_icon.gif" open="1">
+
+		<item text="视频管理" id="customerManager" im0="dhtmlxtree_icon.gif"
+			im1="dhtmlxgantt_icon.gif" im2="dhtmlxtree_icon.gif" open="1">
+			<item text="视频列表" id="customerInforManager">
+				<userdata name="url">video.jsp</userdata>
+			</item>
+			<item text="加载视频" id="loseCustomerManage">
+				<userdata name="url">loadVideo.jsp</userdata>
+			</item>
+			<item text="主推视频" id="loadShow">
+				<userdata name="url">show.jsp</userdata>
+			</item>
+		</item>
+
+		<item text="用户管理" id="serviceManager" im0="dhtmlxtree_icon.gif"
+			im1="dhtmlxgantt_icon.gif" im2="dhtmlxtree_icon.gif" open="1">
+			<item text="用户列表" id="createService">
+				<userdata name="url">list.jsp</userdata>
+			</item>
+		</item>
+
+
+		<!-- <item text="统计报表" id="share" im0="dhtmlxtree_icon.gif" im1="dhtmlxgantt_icon.gif"
+			im2="dhtmlxtree_icon.gif" open="1">
+			<item text="客户贡献分析" id="customerContributeAnalysis">
+				<userdata name="url">#</userdata>
+			</item>
+			<item text="客户构成分析" id="customerConstituteAnalysis">
+				<userdata name="url">#</userdata>
+			</item>
+			<item text="客户服务分析" id="customerServiceAnalysis">
+				<userdata name="url">
+					#
+				</userdata>
+			</item>
+			<item text="客户流失分析" id="customerLostAnalysis">
+				<userdata name="url">
+					#
+				</userdata>
+			</item>
+		</item>
+
+		<item text="基础数据" id="basedata" im0="dhtmlxtree_icon.gif" im1="dhtmlxgantt_icon.gif"
+			im2="dhtmlxtree_icon.gif" open="1">
+			<item text="数据字典管理" id="dataDict">
+				<userdata name="url">#</userdata>
+			</item>
+			<item text="查询产品信息" id="queryProduct">
+				<userdata name="url">basedata/productAction_list</userdata>
+			</item>
+			<item text="查询库存" id="queryStore">
+				<userdata name="url">#</userdata>
+			</item>
+		</item> -->
+	</item>
+</tree>

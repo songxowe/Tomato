@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+      "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+      "http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+
+<validators>
+  <field name="user.username">
+    <field-validator type="requiredstring">
+      <param name="trim">true</param>
+      <message>用户名不能为空</message>
+    </field-validator>
+
+    <field-validator type="stringlength">
+      <param name="minLength">6</param>
+      <param name="maxLength">10</param>
+      <message>用户名的长度需在 ${minLength} 和 ${maxLength} 之间</message>
+    </field-validator>
+  </field>
+
+  <field name="user.password">
+    <field-validator type="requiredstring">
+      <param name="trim">true</param>
+      <message>密码不能为空</message>
+    </field-validator>
+
+    <field-validator type="stringlength">
+      <param name="minLength">6</param>
+      <param name="maxLength">10</param>
+      <message>密码的长度需在 ${minLength} 和 ${maxLength} 之间</message>
+    </field-validator>
+  </field>
+  
+  <field name="repassword">
+    <field-validator type="requiredstring">
+      <param name="trim">true</param>
+      <message>重复密码不能为空</message>
+    </field-validator>
+
+    <field-validator type="stringlength">
+      <param name="minLength">6</param>
+      <param name="maxLength">10</param>
+      <message>重复密码的长度需在 ${minLength} 和 ${maxLength} 之间</message>
+    </field-validator>
+    
+    <field-validator type="fieldexpression">
+      <param name="expression">repassword eq user.password</param>
+      <!-- 
+        <param name="expression">
+          <![CDATA[rePassword.equals(user.password)]]>
+        </param> 
+      -->
+      <!-- 
+        <param name="expression">
+          <![CDATA[rePassword==user.password]]>
+        </param> 
+      -->
+      <message>两次密码不一致</message>
+    </field-validator>
+  </field>
+
+  <field name="user.phone">
+    <field-validator type="stringlength">
+      <param name="minLength">8</param>
+      <param name="maxLength">11</param>
+      <message>手机/电话号码的长度需在 ${minLength} 和 ${maxLength} 之间</message>
+    </field-validator>
+  </field>
+
+  <field name="user.email">
+    <field-validator type="email">
+      <message>email必须符合admin@newer.com</message>
+    </field-validator>
+  </field>
+
+  <field name="user.birthDate">
+    <field-validator type="date">
+      <param name="min">1970-01-01</param>
+      <param name="max">2012-12-31</param>
+      <message>出生日期需在 ${min} 和 ${max} 之间</message>
+    </field-validator>
+  </field>
+  
+  <field name="user.url">
+    <field-validator type="url">
+      <message>url:http://www.newer.com</message>
+    </field-validator>
+  </field>
+  
+  <field name="user.salary">
+    <field-validator type="double">
+      <message>工资要有精度</message>
+    </field-validator>
+  </field>
+  
+  
+</validators>
